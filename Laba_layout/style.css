@@ -1,0 +1,637 @@
+@font-face{
+    font-family: "Raleway SemoBold";
+    src: url(fonts/static/Raleway-SemiBold.ttf);
+}
+
+@font-face{
+    font-family: "Raleway Light";
+    src: url(fonts/static/Raleway-Light.ttf);
+}
+
+@font-face{
+    font-family: "Raleway ExtraLight";
+    src: url(fonts/static/Raleway-ExtraLight.ttf);
+}
+
+@font-face{
+    font-family: "Raleway Bold";
+    src: url(fonts/static/Raleway-Bold.ttf);
+}
+
+@font-face{
+    font-family: "Raleway Medium";
+    src: url(fonts/static/Raleway-Medium.ttf);
+}
+
+@font-face{
+    font-family: "Raleway Heavy";
+    src: url(fonts/static/Raleway-Heavy.otf);
+}
+
+@font-face{
+    font-family: "Font Awesome";
+    src: url(fonts/static/FontAwesome.otf);
+}
+
+
+*{
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+.clearFix{
+    min-width: 1024px;
+    max-width: 1170px;
+    margin: auto;
+}
+
+
+body{
+    background-image: url(image/background.png);
+    background-repeat: no-repeat;
+    background-size: 100% 4366px;
+}
+
+.header_top{
+    padding-top: 72px;
+    background-image: url(image/bg.png);
+    background-repeat: no-repeat;
+    background-size: 100% 851px;
+    height: 851px ;
+}
+
+.top_header_div{
+    display: flex;
+    align-items: center;
+}
+
+.menu{
+    margin-left: auto;
+    width: 60%;
+    justify-content: space-between;
+}
+
+.menu a{
+    color: white;
+    font-family: 'Raleway SemiBold', sans-serif;
+    font-size: 14px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.menu a#welcome{
+    color: #ef4836;
+}
+
+.menu a:hover{
+    color: #ef4836;
+}
+
+.header_top ul{
+    list-style: none;
+    display: flex;
+    margin-right: 0;
+}
+
+.textPhotoTop{
+    margin-top: 220px;
+    display: flex;
+    
+}
+
+.textPhotoTop .photoImg{
+    position: relative;
+}
+
+.textPhotoTop .photoImg img#vid{
+    position: absolute;
+    left: 155px;
+    top: 190px;
+}
+
+.textPhotoTop .photoImg img#vid:hover{
+    transform: scale(1.05);
+}
+
+.whiteLine {
+    position: absolute;
+    margin-top: 5px;
+    margin-left: 430px;
+}
+
+.contentPhotoTop{
+    color: white;
+    list-style: none;
+    flex-direction: column;
+    margin-top: -2.5%;
+}
+
+.contentPhotoTop h1{
+    color: white;
+    font-family: 'Raleway Light';
+    font-weight: 500;
+    line-height: 1.3;
+    font-size: 48px;
+    text-transform: uppercase;
+    padding-bottom: 7%;
+}
+
+.contentPhotoTop p{
+    font-size: 16px;
+    font-family: "Raleway ExtraLight";
+    line-height: 2;
+    word-spacing: 5px;
+    color: white;
+    padding-bottom: 7%;
+}
+
+.contentPhotoTop a{
+    font-size: 18px;
+    font-family: "Raleway Bold";
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.contentTop{
+    position: relative;
+    margin-left: 9%;
+}
+  
+.top_main_div{
+    display: flex;
+    margin-top: 200px;
+    background-image: url(image/bgBlue.png);
+    background-repeat: no-repeat;
+    background-size: 100% 467px;
+    height: 467px ;
+}
+
+.aboutText{
+    padding-left: 70px;
+    padding-top: 144px;
+}
+
+.aboutMain{
+    list-style: none;
+}
+
+.aboutText .aboutMain p{
+    font-size: 16px;
+    font-family: "Raleway ExtraLight";
+    text-align: left;
+    line-height: 2;
+    color:#e9edf6;
+    padding-bottom: 7%;
+}
+
+.aboutText .aboutMain a{
+    font-size: 18px;
+    font-family: "Raleway Bold";
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.aboutImage{
+    padding-left: 75px;
+    margin-top: -160px;
+}
+
+.aboutImage img{
+    box-shadow: 0 0 5px rgba(0,0,0,0.5);
+}
+  
+.mainServicesCards{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 179px;
+}
+
+.mainServicesCards ul{
+    list-style: none;
+}
+
+.servicesCards ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-family: "Raleway Bold";
+    font-weight: bold;
+}
+
+.servicesCards ul li .text{
+    color: white;
+    font-size: 14px;
+    font-family: "Raleway ExtraLight";
+    line-height: 1.85;
+    padding-bottom: 31px; 
+}
+
+.servicesCards .nameCards{
+    display: flex; 
+    margin: auto;
+    padding-bottom: 31px;
+    align-items: center;  
+}
+
+.servicesCards .nameCards p{
+    color: white;
+    font-size: 24px;
+    font-family: "Raleway Light"; 
+    margin-left: 25px;
+}
+
+.servicesCards .nameCards img{
+    height: 25px; 
+     
+}
+
+.mainServicesCards #moneyCard{
+    padding-right: 60px;
+}
+  
+.mainWorks{
+    margin-top: 175px;
+}
+
+.mainWorks .mainWorksMenu{
+    display: flex;
+    align-items: center;
+}
+
+.mainWorks .mainWorksMenu .menuWorks{
+    margin-left: auto;
+    list-style: none;
+    width: 451px;
+    justify-content: space-between;
+    display: flex;
+}
+
+.menuWorks a{
+    color: #595959;
+    font-family: 'Raleway Medium', sans-serif;
+    font-size: 14px;
+    line-height: 1.857;
+    text-decoration: none;
+}
+
+.menuWorks a#all{
+    color: white;
+}
+
+.menuWorks a:hover{
+    color: white;
+}
+
+.mainWorksImage{
+    display: flex;
+    max-width: 1400px;
+    min-width: 1024px;
+    margin: auto;
+    margin-top: 25px;
+}  
+
+.mainWorksImage .blocksImageLeft{
+    display: flex;
+    flex-direction: column;
+    margin-right: 7px;
+}
+
+.mainWorksImage .blocksTopBottom{
+    flex-direction: column;
+}
+
+.mainWorksImage .blocksImageTop{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 3px;
+}
+
+.mainWorksImage .blocksImageBottom{
+    display: flex;
+    flex-direction: row;
+}
+
+.mainWorksImage .blocksImageLeft .imageLeftTop{
+    margin-bottom: 3px;
+}
+
+.mainWorksImage .blocksTopBottom .blocksImageTop .imageTopLeft{
+    margin-right: 7px;
+}
+
+.mainWorksImage .blocksTopBottom .blocksImageBottom .imageBottomLeft{
+    margin-right: 7px;
+}
+
+
+.mainSlider{
+    margin-top: 245px;
+    height: 544px;
+    overflow: hidden;
+    position: relative;
+    padding-top: 50px;
+    z-index: 0;
+}
+
+.mainSlider .arrows{
+    display: flex;
+    position: absolute;
+    z-index: 5;
+    right: 0;
+    bottom: 0;
+    margin-bottom: 115px;
+    margin-right: 70px;
+}
+
+.mainSlider .arrows p{
+    font-family:"Font Awesome";
+    font-size: 26px;
+    color: #c23526;
+}
+
+.mainSlider .arrows p:hover{
+    color: white;
+}
+
+.mainSlider .arrows p#right{
+    padding-left: 18px;
+}
+
+.mainSlider .Lenta{
+    display: flex;
+    width: 300%;
+    height: 100%;
+    position: absolute;
+    animation: move 15s infinite alternate;
+}
+
+@keyframes move{
+
+    0%, 26%{
+        left: 0;
+    }
+
+    36%, 62%{
+        left: -100%;
+    }
+
+    72%, 100%{
+        left: -200%;
+    }
+
+}
+
+.mainSlider .Lenta .slide{
+    display: flex;
+    background-image: url(image/bgOrange.png);
+    background-repeat: no-repeat;
+    min-width: 1170px;
+}
+
+.mainSlider .Lenta .slide .slidePhoto{
+    margin-left: 84px;
+    margin-top: -50px;
+}
+
+.mainSlider .Lenta .slide .slideText{
+    margin-left: 49px;
+    margin-top: 146px;
+    height: 152px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    
+}  
+
+.mainSlider .Lenta .slide .slideText img#line{
+    position:absolute;
+    margin-top: 15px;
+    margin-left: -125px;
+}
+
+.mainSlider .Lenta .slide .slideText img#quote{
+    position:absolute;
+    z-index: 0;
+    margin-top: -10px;
+    margin-left: -20px;
+}
+
+
+.mainSlider .Lenta .slide .slideText p{
+    position:relative;
+    color: white;
+    font-family: "Raleway Light";
+    font-size: 16px;
+    line-height: 1.8;
+    font-style: oblique;
+}  
+
+.mainSlider .Lenta .slide .slideText p#name{
+    color: white;
+    font-family: "Raleway Bold";
+    font-size: 16px;
+    font-style: normal;
+}  
+
+.spisockLogo{
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 25px;
+    margin-right: 35px;
+}
+
+.spisockLogo li img{
+    opacity: 0.3;
+}
+
+.mainForm{
+    display: flex;
+    background-image: url(image/bgForm.png);
+    background-repeat: no-repeat;
+    margin-top: 100px;
+}
+
+.mainForm .imageInfoForm{
+    width: 470px;
+    height: 424px;
+    background-image: url(image/bgBlueForm.png);
+    background-repeat: no-repeat;
+}
+
+.mainForm .imageInfoForm .infoForm{
+    margin-top: 80px;
+    margin-left: 80px;
+    margin-bottom: 70px;
+    height: 272px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.mainForm .imageInfoForm .infoForm .info h1{
+    color: white;
+    font-size: 20px;
+    line-height: 1.7;
+    font-family: "Raleway Bold";
+    font-weight: bold;
+}
+
+.mainForm .imageInfoForm .infoForm .info p{
+    color: white;
+    font-size: 14px;
+    line-height: 1.8;
+    font-family: "Raleway Light";
+    
+}
+
+.mainForm .fieldsForm{
+    margin-left: 60px;
+    margin-top: 55px;
+    position: relative;
+}
+
+.mainForm .fieldsForm form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 320px;
+}
+
+.mainForm .fieldsForm form h1{
+    color: white;
+    font-size: 30px;
+    font-family: "Raleway Light";
+    font-weight: 200;
+}
+
+.mainForm .fieldsForm img{
+    position: absolute;
+    margin-top: 18px;
+    margin-left: -129px;
+}
+
+.mainForm .fieldsForm form input[type=text]{
+    background-color: #0b0b0b;
+    border: 0;
+    border-bottom: 1px solid #2b2b2b;
+    padding: 10px;
+    width: 394px;
+    color: white;
+    font-family: "Raleway Light";
+    font-size: 16px;
+}
+
+.mainForm .fieldsForm form input[type=text]::placeholder{
+    color: #525252;
+}
+
+.mainForm .fieldsForm form input[type=text]:focus{
+    outline:none;
+    border-bottom: 1px solid #2866bd;
+}
+
+.mainForm .fieldsForm form input[type=text]:focus::placeholder{
+    color: #2866bd;
+}
+
+.mainForm .fieldsForm form input[type=email]{
+    background-color: #0b0b0b;
+    border: 0;
+    border-bottom: 1px solid #2b2b2b;
+    padding: 10px;
+    width: 394px;
+    color: white;
+    font-family: "Raleway Light";
+    font-size: 16px;
+}
+
+.mainForm .fieldsForm form input[type=email]::placeholder{
+    color: #525252;
+}
+
+.mainForm .fieldsForm form input[type=email]:focus{
+    outline:none;
+    border-bottom: 1px solid #2866bd;
+}
+
+.mainForm .fieldsForm form input[type=email]:focus::placeholder{
+    color: #2866bd;
+}
+
+.mainForm .fieldsForm form textarea{
+    background-color: #0b0b0b;
+    border: 0;
+    border-bottom: 1px solid #2b2b2b;
+    padding: 10px;
+    width: 394px;
+    resize: none;
+    color: white;
+    font-family: "Raleway Light";
+    font-size: 16px;
+    text-indent: 0px;
+}
+
+.mainForm .fieldsForm form textarea::placeholder{
+    color: #525252;
+}
+
+.mainForm .fieldsForm form textarea:focus{
+    outline:none;
+    border-bottom: 1px solid #2866bd;
+}
+
+.mainForm .fieldsForm form textarea:focus::placeholder{
+    color: #2866bd;
+}
+
+.mainForm .fieldsForm form input[type=submit]{
+    background-color: #0b0b0b;
+    color: #ef4836;
+    border: 0;
+    width: 40%;
+    font-family: "Raleway Bold";
+    font-size: 18px;
+    text-align: left;
+    margin-top: 15px;
+}
+
+.mainForm .fieldsForm form input[type=submit]:focus{
+    outline:none;
+}
+
+.top_footer{
+    display: flex;
+    align-items: center;
+    margin-top: 50px;
+    padding-bottom: 45px;
+}
+
+.top_footer .menu_footer{
+    display: flex;
+    margin-left: auto;
+}
+
+.top_footer p{
+    color: #565656;
+    font-family: 'Raleway ExtraLight', sans-serif;
+    font-size: 14px;
+    margin-left: 15px;
+}
+
+.top_footer .menu_footer p{
+    color: white;
+    font-family: 'Font Awesome', sans-serif;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+.top_footer .menu_footer p#be{
+    color:#2866bd;
+}
